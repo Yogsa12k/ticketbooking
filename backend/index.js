@@ -17,7 +17,7 @@ app.post('/mumbai' , async (req , res) => {
         TrainNumber:TrainNumber,
         Seats : Seats,
         Time : Time,
-    })x``
+    })
     res.send("data added to mumbai's train successfully")
 })
 
@@ -59,10 +59,6 @@ app.get('/bookings' , async (req , res) => {
     })
 })
 
-app.get('/data' , async (req, res) => {
-    const value = await Booking.find({});
-    res.send(value)
-})
 app.post('/bookticket', async (req , res) => { // for booking a ticket
     const data = req.body;
     Booking.create({
