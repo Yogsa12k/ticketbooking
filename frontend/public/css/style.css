@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+}
+#con{
+  /* background: bisque; */
+  /* border:2px solid brown; */
+  border-radius : 10px;
+  min-height:300px;
+  margin-top:25px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #333;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+}
+
+button , #btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  background: white;
+  margin: 10px auto;
+  padding: 3px;
+  width: 60%;
+  border:2px solid brown;
+  border-radius: 5px;
+  /* height:150px; */
+}
+#source{
+  font-size: 20px;
+}
+
+#destination{
+  font-size: 20px;
+}
+#ContainerOfParagragh{
+   display:flex; 
+   height:110px;
+   width:350px;
+   justify-content: center;
+   align-items: center;
+   margin-top:10px;
+}
+#paragraph{
+  font-size: 22px;
+  font-weight: bold;
+  color:white;
+}
+h1{
+  color:white;
+}
+#parent{
+  height:120px;
+  display: flex;
+  justify-content: center;
+}
+#conofbutton{
+  height:80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#conofdetails{
+  min-height:300px;
+  width:400px;
+}
+#parentofdetails{
+  min-height:300px;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+}
+#trains{
+  color:black;
+}
+#bookticket{
+  color:black;
+}
