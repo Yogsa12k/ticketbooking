@@ -45,7 +45,7 @@ function bookTicket() {
   
   const conofbutton = document.getElementById('conofbutton')
   conofbutton.innerHTML = " "
-  fetch("http://localhost:2000/bookticket", {
+  fetch("http://3.110.194.86:2000/bookticket", {
     // console.log(val)
     method: "POST",
     headers: { "Content-Type": "application/json" },

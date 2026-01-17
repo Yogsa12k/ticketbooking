@@ -3,7 +3,7 @@ async function searchTrains() {
   const destination = document.getElementById("destination").value;
   let con = document.getElementById('con')
   if((source === "Mumbai"&& destination === "Ahmedabad") || (source === "Ahmedabad" && destination === "Mumbai")){
-    const val = await fetch(`http://localhost:2000/${source}`)
+    const val = await fetch(`http://3.110.194.86:2000/${source}`)
     const finalval = await val.json();
     con.style.backgroundColor = "#007bff"
     con.style.border = "2px solid brown"
