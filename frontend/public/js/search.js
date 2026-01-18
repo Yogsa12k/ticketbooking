@@ -2,7 +2,9 @@ async function searchTrains() {
   const source = document.getElementById("source").value;
   const destination = document.getElementById("destination").value;
   let con = document.getElementById('con')
-  if((source === "Mumbai"&& destination === "Ahmedabad") || (source === "Ahmedabad" && destination === "Mumbai")){
+  if(((source === "Mumbai"|| source === "mumbai")&& (destination === "Ahmedabad" || destination === "ahmedabad")) 
+    ||
+     ((source === "Ahmedabad" || source === "ahmedabad") && (destination === "Mumbai" || destination === "mumbai"))){
     const val = await fetch(`http://ec2-3-110-194-86.ap-south-1.compute.amazonaws.com:2000/${source}`)
     const finalval = await val.json();
     con.style.backgroundColor = "#007bff"
@@ -26,6 +28,6 @@ async function searchTrains() {
       })
     })
   }
-  else alert('Please Enter right source and destination')
+  else alert('The Train Is Only for Mumbai And Ahmedabad')
 
 }
